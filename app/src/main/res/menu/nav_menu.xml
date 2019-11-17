@@ -12,6 +12,6 @@
             android:title="@string/jktj" />
         <item
             android:id="@+id/add"
-            android:title="@string/add" />
+            android:title="@string/data" />
     </group>
 </menu>

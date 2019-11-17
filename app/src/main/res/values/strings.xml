@@ -2,7 +2,7 @@
     <string name="app_name">线上公卫</string>
     <string name="tnb">2型糖尿病</string>
     <string name="gxy">高血压</string>
-    <string name="add">新建居民档案</string>
+    <string name="data">居民档案</string>
     <string name="start">开始随访</string>
     <string name="list">患者名单</string>
     <string name="jktj">健康体检</string>
