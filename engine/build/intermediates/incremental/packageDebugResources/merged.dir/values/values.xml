@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_bg_color">#11d3c1</color>
+    <color name="activity_bg_color">#ebebeb</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="aliceblue">#f0f8ff</color>
+    <color name="antiquewhite">#faebd7</color>
+    <color name="app_background_light">#ffffff</color>
+    <color name="app_background_normal">#FFE5E5E5</color>
+    <color name="app_def_color">#11d3c1</color>
+    <color name="app_line">#999999</color>
+    <color name="app_refresh_background">@color/colorPrimary</color>
+    <color name="app_refresh_textColor">@color/app_textColor_selected</color>
+    <color name="app_selected">#66000000</color>
+    <color name="app_selected_dark">#999999</color>
+    <color name="app_textColor_dark_normal">#666666</color>
+    <color name="app_textColor_dark_selected">#000000</color>
+    <color name="app_textColor_normal">#a1a5b0</color>
+    <color name="app_textColor_selected">#ffffff</color>
+    <color name="app_title_bg">#199ED8</color>
+    <color name="aqua">#00ffff</color>
+    <color name="aquamarine">#7fffd4</color>
+    <color name="azure">#f0ffff</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="beige">#f5f5dc</color>
+    <color name="bg_horizontal_btn_normal">#eeeeee</color>
+    <color name="bg_horizontal_btn_selected">#70a3a4a7</color>
+    <color name="bg_horizontal_line_color">#80a3a4a7</color>
+    <color name="bg_indicator_point_normal">#D8D8D8</color>
+    <color name="bg_indicator_point_selected">#A6A6A6</color>
+    <color name="bg_text_press">#E4E4E4</color>
+    <color name="bisque">#ffe4c4</color>
+    <color name="black">#000000</color>
+    <color name="blanchedalmond">#ffebcd</color>
+    <color name="blue">#0000ff</color>
+    <color name="blueviolet">#8a2be2</color>
+    <color name="bottom_tag_color">#ffa1a5b0</color>
+    <color name="brown">#a52a2a</color>
+    <color name="burlywood">#deb887</color>
+    <color name="button_press_red">#d02c30</color>
+    <color name="c1">#f2f2f2</color>
+    <color name="c10">#e79e99</color>
+    <color name="c11">#ffe8e7</color>
+    <color name="c12">#ffffff</color>
+    <color name="c13">#000000</color>
+    <color name="c14">#960000</color>
+    <color name="c15">#f8f8f8</color>
+    <color name="c16">#c4c4c4</color>
+    <color name="c17">#252525</color>
+    <color name="c18">#e8e8e8</color>
+    <color name="c19">#e11c00</color>
+    <color name="c2">#eeeeee</color>
+    <color name="c20">#1f1f1f</color>
+    <color name="c21">#f28f25</color>
+    <color name="c22">#86BA63</color>
+    <color name="c3">#dedede</color>
+    <color name="c4">#cecece</color>
+    <color name="c5">#9b9b9b</color>
+    <color name="c6">#646464</color>
+    <color name="c7">#383838</color>
+    <color name="c8">#ff6c6c</color>
+    <color name="c9">#cc3333</color>
+    <color name="cadetblue">#5f9ea0</color>
+    <color name="cancel_color">#FF6E42</color>
+    <color name="chartreuse">#7fff00</color>
+    <color name="chocolate">#d2691e</color>
+    <color name="click_to_set_color">#A1A5B0</color>
+    <color name="color1">#FFFFFF</color>
+    <color name="color13">#F9974E</color>
+    <color name="color14">#59B29C</color>
+    <color name="color2">#666666</color>
+    <color name="color25">#ED5564</color>
+    <color name="color26">#D7D8DC</color>
+    <color name="color27">#60646464</color>
+    <color name="color28">#40646464</color>
+    <color name="color29">#F0F0F0</color>
+    <color name="color3">#D0D0D0</color>
+    <color name="color30">#E1E1E1</color>
+    <color name="color31">#E6E6E6</color>
+    <color name="color32">#ebebeb</color>
+    <color name="color33">#80c7c7c7</color>
+    <color name="color34">#FF01b2ff</color>
+    <color name="color35">#FF4095fb</color>
+    <color name="color36">#FFff6525</color>
+    <color name="color4">#F6F6F6</color>
+    <color name="color5">#F5F5F5</color>
+    <color name="colorAccent">#e6e6e6</color>
+    <color name="colorPrimary">#393161</color>
+    <color name="colorPrimaryDark">#150d3d</color>
+    <color name="colorPrimary_pressed">#130C39</color>
+    <color name="color_orange">#80FF9900</color>
+    <color name="confirm_cancel_color">#f05555</color>
+    <color name="coral">#ff7f50</color>
+    <color name="cornflowerblue">#6495ed</color>
+    <color name="cornsilk">#fff8dc</color>
+    <color name="crimson">#dc143c</color>
+    <color name="cyan">#00ffff</color>
+    <color name="darkblue">#00008b</color>
+    <color name="darkcyan">#008b8b</color>
+    <color name="darkgoldenrod">#b8860b</color>
+    <color name="darkgray">#a9a9a9</color>
+    <color name="darkgreen">#006400</color>
+    <color name="darkgrey">#a9a9a9</color>
+    <color name="darkkhaki">#bdb76b</color>
+    <color name="darkmagenta">#8b008b</color>
+    <color name="darkolivegreen">#556b2f</color>
+    <color name="darkorange">#ff8c00</color>
+    <color name="darkorchid">#9932cc</color>
+    <color name="darkred">#8b0000</color>
+    <color name="darksalmon">#e9967a</color>
+    <color name="darkseagreen">#8fbc8f</color>
+    <color name="darkslateblue">#483d8b</color>
+    <color name="darkslategray">#2f4f4f</color>
+    <color name="darkslategrey">#2f4f4f</color>
+    <color name="darkturquoise">#00ced1</color>
+    <color name="darkviolet">#9400d3</color>
+    <color name="deeppink">#ff1493</color>
+    <color name="deepskyblue">#00bfff</color>
+    <color name="dimgray">#696969</color>
+    <color name="dimgrey">#696969</color>
+    <color name="dodgerblue">#1e90ff</color>
+    <color name="firebrick">#b22222</color>
+    <color name="floralwhite">#fffaf0</color>
+    <color name="forestgreen">#228b22</color>
+    <color name="fuchsia">#ff00ff</color>
+    <color name="gainsboro">#dcdcdc</color>
+    <color name="ghostwhite">#f8f8ff</color>
+    <color name="gold">#ffd700</color>
+    <color name="goldenrod">#daa520</color>
+    <color name="gray">#808080</color>
+    <color name="green">#008000</color>
+    <color name="green_transf">#5090ee90</color>
+    <color name="greenyellow">#adff2f</color>
+    <color name="grey">#808080</color>
+    <color name="honeydew">#f0fff0</color>
+    <color name="hotpink">#ff69b4</color>
+    <color name="important_operation_color">#F83A3A</color>
+    <color name="indianred">#cd5c5c</color>
+    <color name="indigo">#4b0082</color>
+    <color name="item_background">#ffffff</color>
+    <color name="item_bg">#403F4D</color>
+    <color name="item_click_bg_color">#dddddd</color>
+    <color name="item_line">#212741</color>
+    <color name="item_textColor_content">#a1a5b0</color>
+    <color name="item_textColor_extra">#f5b42c</color>
+    <color name="item_textColor_title">#ffffff</color>
+    <color name="ivory">#fffff0</color>
+    <color name="khaki">#f0e68c</color>
+    <color name="lavender">#e6e6fa</color>
+    <color name="lavenderblush">#fff0f5</color>
+    <color name="lawngreen">#7cfc00</color>
+    <color name="lemonchiffon">#fffacd</color>
+    <color name="light_grey3">#cccccc</color>
+    <color name="lightblue">#add8e6</color>
+    <color name="lightcoral">#f08080</color>
+    <color name="lightcyan">#e0ffff</color>
+    <color name="lightgoldenrodyellow">#fafad2</color>
+    <color name="lightgray">#d3d3d3</color>
+    <color name="lightgreen">#90ee90</color>
+    <color name="lightgrey">#d3d3d3</color>
+    <color name="lightpink">#ffb6c1</color>
+    <color name="lightsalmon">#ffa07a</color>
+    <color name="lightseagreen">#20b2aa</color>
+    <color name="lightskyblue">#87cefa</color>
+    <color name="lightslategray">#778899</color>
+    <color name="lightslategrey">#778899</color>
+    <color name="lightsteelblue">#b0c4de</color>
+    <color name="lightyellow">#ffffe0</color>
+    <color name="lime">#00ff00</color>
+    <color name="limegreen">#32cd32</color>
+    <color name="line_color">#e6e6e6</color>
+    <color name="linen">#faf0e6</color>
+    <color name="listview_divider_color">#333333</color>
+    <color name="long_btn_bg_press">#11b9aa</color>
+    <color name="magenta">#ff00ff</color>
+    <color name="maroon">#800000</color>
+    <color name="mediumaquamarine">#66cdaa</color>
+    <color name="mediumblue">#0000cd</color>
+    <color name="mediumorchid">#ba55d3</color>
+    <color name="mediumpurple">#9370db</color>
+    <color name="mediumseagreen">#3cb371</color>
+    <color name="mediumslateblue">#7b68ee</color>
+    <color name="mediumspringgreen">#00fa9a</color>
+    <color name="mediumturquoise">#48d1cc</color>
+    <color name="mediumvioletred">#c71585</color>
+    <color name="menu_textColor">@color/item_textColor_title</color>
+    <color name="menu_textColor_content">@color/item_textColor_content</color>
+    <color name="midnightblue">#191970</color>
+    <color name="mintcream">#f5fffa</color>
+    <color name="mistyrose">#ffe4e1</color>
+    <color name="moccasin">#ffe4b5</color>
+    <color name="navajowhite">#ffdead</color>
+    <color name="navy">#000080</color>
+    <color name="none_color">#00000000</color>
+    <color name="oldlace">#fdf5e6</color>
+    <color name="olive">#808000</color>
+    <color name="olivedrab">#6b8e23</color>
+    <color name="orange">#ffa500</color>
+    <color name="orangered">#ff4500</color>
+    <color name="orchid">#da70d6</color>
+    <color name="palegoldenrod">#eee8aa</color>
+    <color name="palegreen">#98fb98</color>
+    <color name="paleturquoise">#afeeee</color>
+    <color name="palevioletred">#db7093</color>
+    <color name="papayawhip">#ffefd5</color>
+    <color name="peachpuff">#ffdab9</color>
+    <color name="peru">#cd853f</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="plum">#dda0dd</color>
+    <color name="popup_devider_color">#ebebeb</color>
+    <color name="popup_nick_name_hint_color">#b2b2b2</color>
+    <color name="powderblue">#b0e0e6</color>
+    <color name="purple">#800080</color>
+    <color name="red">#ff0000</color>
+    <color name="rosybrown">#bc8f8f</color>
+    <color name="route_line_color">#ff343c5b</color>
+    <color name="route_selected_color">#fff5b12d</color>
+    <color name="royalblue">#4169e1</color>
+    <color name="saddlebrown">#8b4513</color>
+    <color name="salmon">#fa8072</color>
+    <color name="sandybrown">#f4a460</color>
+    <color name="seaShell">#fff5ee</color>
+    <color name="seagreen">#2e8b57</color>
+    <color name="seekBar_background">#c8e6e6e6</color>
+    <color name="seekBar_color">@color/colorPrimary</color>
+    <color name="seekBar_progress">#c8666666</color>
+    <color name="setting_line_color">#D0D0CF</color>
+    <color name="sienna">#a0522d</color>
+    <color name="silver">#c0c0c0</color>
+    <color name="skyblue">#87ceeb</color>
+    <color name="slateblue">#6a5acd</color>
+    <color name="slategray">#708090</color>
+    <color name="slategrey">#708090</color>
+    <color name="snow">#fffafa</color>
+    <color name="springgreen">#00ff7f</color>
+    <color name="steelblue">#4682b4</color>
+    <color name="style_divider_color">#C9C7CD</color>
+    <color name="style_red">#ff4c41</color>
+    <color name="tan">#d2b48c</color>
+    <color name="teal">#008080</color>
+    <color name="text_color_light_blue">#2BBFD6</color>
+    <color name="text_color_light_blue_pre">#13b0c2</color>
+    <color name="text_color_origin_second">#FF9900</color>
+    <color name="text_color_property">#333</color>
+    <color name="text_origin_highlight">#F5B52B</color>
+    <color name="text_tab">@color/app_textColor_selected</color>
+    <color name="thistle">#d8bfd8</color>
+    <color name="titlebar_bg_color">#3C3C3C</color>
+    <color name="tomato">#ff6347</color>
+    <color name="toolBar_title_textColor">#ffffff</color>
+    <color name="transparent">#0000</color>
+    <color name="transparent2">#8000</color>
+    <color name="transparent_gray">#80A5A5A5</color>
+    <color name="transparent_m">#c0000000</color>
+    <color name="transparent_white">#DDf0f0f0</color>
+    <color name="turquoise">#40e0d0</color>
+    <color name="violet">#ee82ee</color>
+    <color name="wheat">#f5deb3</color>
+    <color name="white">#ffffff</color>
+    <color name="whitesmoke">#f5f5f5</color>
+    <color name="yellow">#ffff00</color>
+    <dimen name="android_status_height">25dp</dimen>
+    <dimen name="app_round_default">10dp</dimen>
+    <dimen name="dialog_content_margin_bottom">50dp</dimen>
+    <dimen name="dialog_content_margin_left">18dp</dimen>
+    <dimen name="dialog_content_margin_right">18dp</dimen>
+    <dimen name="dialog_corner_radius">12dp</dimen>
+    <dimen name="dialog_item_height">58dp</dimen>
+    <dimen name="dialog_line_margin_v">10dp</dimen>
+    <dimen name="dialog_progress_height">100dp</dimen>
+    <dimen name="dialog_progress_width">100dp</dimen>
+    <dimen name="divide_line_height">2px</dimen>
+    <dimen name="divider_padding_left">12dp</dimen>
+    <dimen name="divider_padding_right">12dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
+    <dimen name="margin_content">15dp</dimen>
+    <dimen name="margin_default">10dp</dimen>
+    <dimen name="margin_large">50dp</dimen>
+    <dimen name="padding_content">15dp</dimen>
+    <dimen name="padding_default">10dp</dimen>
+    <dimen name="padding_text">5dp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="text_size_17sp">17sp</dimen>
+    <dimen name="text_size_l">17dp</dimen>
+    <dimen name="text_size_m">15dp</dimen>
+    <dimen name="text_size_s">13dp</dimen>
+    <dimen name="text_size_x">19sp</dimen>
+    <dimen name="text_size_xl">19dp</dimen>
+    <dimen name="text_size_xxl">22dp</dimen>
+    <dimen name="text_size_xxx">23dp</dimen>
+    <dimen name="title_text_size">14dp</dimen>
+    <integer name="loading_frame_interval">80</integer>
+    <string name="album">相册</string>
+    <string name="app_name">Engine</string>
+    <string name="camera_cancel">取消</string>
+    <string name="clear_history">清除历史</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="photo">所有相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <style name="Engine_ActionBar_NoPadding" parent="@style/Theme.AppCompat">
+        <item name="android:background">@android:color/transparent</item>
+        <!-- Support library compatibility -->
+        <item name="background">@android:color/transparent</item>
+        <!--解决左边一直有一块边距的问题 contentInsetStart = 0 -->
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+    <style name="Engine_DialogStyle_FullScreen" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>//边框
+        <item name="android:windowIsFloating">true</item>//是否悬浮
+        <item name="android:windowIsTranslucent">true</item>//半透明
+        <item name="android:windowNoTitle">true</item>//没标题栏
+        <item name="android:background">@android:color/transparent</item>//背景透明
+        <item name="android:windowBackground">@android:color/transparent</item>//背景透明
+        <item name="android:backgroundDimEnabled">true</item>//模糊
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="Engine_NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <!--透明背景-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>-->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <!-- toolbar的主题-->
+        <item name="toolbarStyle">@style/Engine_ActionBar_NoPadding</item>
+    </style>
+    <style name="app_text_menu_style">
+        <item name="android:padding">@dimen/padding_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/padding_default</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/menu_textColor</item>
+        <item name="android:textColorHint">@color/item_textColor_content</item>
+    </style>
+    <style name="app_text_title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/item_textColor_title</item>
+        <item name="android:textSize">@dimen/text_size_xxx</item>
+    </style>
+    <style name="call_help_portrait_txt_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_s</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="dialog_custom_content_text_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/text_color_property</item>
+    </style>
+    <style name="dialog_custom_title_text_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">23dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_property</item>
+    </style>
+    <style mce_bogus="1" name="dialog_up_down_anim" parent="@style/Engine_DialogStyle_FullScreen">
+        <item name="android:windowEnterAnimation">@anim/push_up_in_no_alpha</item>
+        <item name="android:windowExitAnimation">@anim/push_down_out_no_alpha</item>
+    </style>
+    <style name="discover_landscape_ll_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/discover_bg</item>
+        <item name="android:padding">25dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="discover_portrait_ll_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/discover_bg</item>
+        <item name="android:padding">25dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="divide_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divide_line_height</item>
+        <item name="android:background">@color/app_line</item>
+    </style>
+    <style name="titleIcContentStyle">
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/dp_4</item>
+    </style>
+    <style name="titleStyle">
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <declare-styleable name="IconEditText">
+        <!--左边的图片-->
+        <attr format="reference" name="leftImageSrc"/>
+        <!--右边的图片-->
+        <attr format="reference" name="rightImageSrc"/>
+        <!--hint-->
+        <attr format="string" name="tHint"/>
+        <!--hintColor-->
+        <attr format="reference" name="tHintColor"/>
+        <!--int TYPE_CLASS_DATETIME = 4;
+            int TYPE_CLASS_NUMBER = 2;
+            int TYPE_CLASS_PHONE = 3;
+            int TYPE_CLASS_TEXT = 1;-->
+        <!--输入文本的种类-->
+        <attr name="inputType">
+            <enum name="TYPE_CLASS_DATETIME" value="4"/>
+            <enum name="TYPE_CLASS_NUMBER" value="2"/>
+            <enum name="TYPE_CLASS_PHONE" value="3"/>
+            <enum name="TYPE_CLASS_TEXT" value="1"/>
+            <enum name="TYPE_TEXT_VARIATION_PASSWORD" value="128"/>
+        </attr>
+        <!--左图的左边距-->
+        <attr format="dimension" name="leftImageMarginLeft"/>
+        <!--右图的左边距-->
+        <attr format="dimension" name="rightImageMarginRight"/>
+        <!--编辑区的左边距-->
+        <attr format="dimension" name="editTextMarginLeft"/>
+        <!--编辑区的右边距-->
+        <attr format="dimension" name="editTextMarginRight"/>
+        <!--内容字体颜色-->
+        <attr format="reference" name="textColor"/>
+        <!--内容字体大小-->
+        <attr format="dimension" name="textSize"/>
+        <!--内容最大的长度-->
+        <attr format="integer" name="maxLength"/>
+        <!--是否显示左边的图片-->
+        <attr format="boolean" name="showLeft"/>
+        <!--是否显示右边图片-->
+        <attr format="boolean" name="showRight"/>
+        <!--是否显示右边文字-->
+        <attr format="boolean" name="showRightTxt"/>
+        <!--是否显示底部横线-->
+        <attr format="boolean" name="showBottom"/>
+        <!--右边文字大小-->
+        <attr format="dimension" name="rightTxtSize"/>
+        <!--右边文字颜色-->
+        <attr format="reference" name="rightTxtColor"/>
+        <!--右边文字背景色-->
+        <attr format="reference" name="rightTxtBackground"/>
+        <!--右边文字内容-->
+        <attr format="string" name="rightTxtContent"/>
+        <!--是否支持emoji-->
+        <attr format="boolean" name="emojiallow"/>
+    </declare-styleable>
+    <declare-styleable name="ShadeView">
+        <attr format="reference" name="icon"/>
+        <attr format="color" name="color"/>
+        <attr format="string" name="text"/>
+        <attr format="dimension" name="text_size"/>
+    </declare-styleable>
+</resources>

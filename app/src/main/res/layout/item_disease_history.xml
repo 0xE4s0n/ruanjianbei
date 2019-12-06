@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/item_disease_history_cbox"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:scaleType="centerInside"
+        android:src="@drawable/ok_selector" />
+
+    <TextView
+        android:id="@+id/item_disease_history_name"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_toRightOf="@id/item_disease_history_cbox"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_m" />
+
+    <RelativeLayout
+        android:id="@+id/item_disease_history_subview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_disease_history_cbox"
+        android:layout_marginTop="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/item_disease_subname"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginRight="@dimen/dp_5"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m" />
+
+        <EditText
+            android:id="@+id/item_disease_subname_value"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_toRightOf="@id/item_disease_subname"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/item_disease_subtime"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_45"
+            android:layout_below="@id/item_disease_subname"
+            android:layout_marginRight="@dimen/dp_5"
+            android:gravity="center"
+            android:text="确诊时间"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/item_disease_subtime_value"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_below="@id/item_disease_subname_value"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_toRightOf="@id/item_disease_subtime"
+            android:background="@drawable/white_round_stroke_bg"
+            android:drawableRight="@drawable/btn_right"
+            android:drawablePadding="@dimen/dp_4"
+            android:gravity="center"
+            android:paddingRight="@dimen/dp_5"
+            android:textColor="@color/c6"
+            android:textSize="@dimen/text_size_m" />
+    </RelativeLayout>
+</RelativeLayout>

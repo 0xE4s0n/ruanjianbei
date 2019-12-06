@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_45"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_5">
+
+    <TextView
+        android:id="@+id/item_more_radio_name"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:text="name"
+        android:textColor="@color/c6" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_more_radio_checkbox"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_weight="1.0"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,58 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--   ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved. -->
+3<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+4    package="com.baidu.ocr.ui"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="14"
+9-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="25" />
+10-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:7:5-65
+12-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:7:22-62
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:8:5-80
+13-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:8:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:9:5-81
+14-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:9:22-78
+15
+16    <uses-feature android:name="android.hardware.camera2.full" />
+16-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:11:5-66
+16-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:11:19-63
+17    <uses-feature android:name="android.hardware.camera" />
+17-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:12:5-60
+17-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:12:19-57
+18    <uses-feature android:name="android.hardware.camera.autofocus" />
+18-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:13:5-70
+18-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:13:19-67
+19
+20    <application
+20-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:15:5-28:19
+21        android:allowBackup="true"
+21-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:16:9-35
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:18:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:17:9-41
+24        android:supportsRtl="true"
+24-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:19:9-35
+25        android:theme="@style/AppTheme"
+25-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:21:9-40
+26        android:vmSafeMode="true" >
+26-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:20:9-34
+27        <activity
+27-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:23:9-26:80
+28            android:name="com.baidu.ocr.ui.camera.CameraActivity"
+28-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:24:13-66
+29            android:configChanges="screenSize|orientation"
+29-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:25:13-59
+30            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+30-->C:\Users\0xE4s0n\Documents\App\onlineGongWei\ruanjianbei\ocr_ui\src\main\AndroidManifest.xml:26:13-77
+31    </application>
+32
+33</manifest>

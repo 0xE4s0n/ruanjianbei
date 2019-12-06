@@ -1,14 +1,16 @@
 package cuit.xsgw;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class SplashActivity extends AppCompatActivity {
     boolean islogin = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,13 +21,13 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent;
-                if(islogin)
-                    intent = new Intent(getApplicationContext(),MainActivity.class);
+                if (islogin)
+                    intent = new Intent(getApplicationContext(), MainActivity.class);
                 else
-                    intent = new Intent(getApplicationContext(),LoginActivity.class);
+                    intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
-        },1000);
+        }, 1000);
     }
 }

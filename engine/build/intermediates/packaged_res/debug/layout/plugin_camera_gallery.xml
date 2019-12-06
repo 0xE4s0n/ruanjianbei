@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/albumback"
+    android:id="@+id/base_view">
+
+    <com.android.pictures.zoom.ViewPagerFixed
+        android:id="@+id/preview_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/plugin_camera_black"
+        android:unselectedAlpha="1"></com.android.pictures.zoom.ViewPagerFixed>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/albumback"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/preview_left"
+                style="@style/titleIcContentStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/btn_back"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/preview_current_count"
+                style="@style/app_text_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/preview_left"
+                android:layout_marginLeft="10dp"
+                android:text="1/55"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_l" />
+
+            <Button
+                android:id="@+id/preview_done"
+                android:layout_width="80dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/blue_btn_smallradius_selector"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/text_size_xl"
+                android:text="完成"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#80353535">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/darkgray" />
+
+        <TextView
+            android:id="@+id/preview_select"
+            style="@style/app_text_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="选择"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_l" />
+
+        <ImageView
+            android:id="@+id/preview_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_item_unselect"
+            android:padding="10dp"
+            android:layout_toLeftOf="@id/preview_select" />
+    </RelativeLayout>
+
+</RelativeLayout>
+  

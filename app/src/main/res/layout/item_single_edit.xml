@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_50"
+    android:background="@drawable/item_form_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_5">
+
+    <TextView
+        android:id="@+id/item_single_title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:minWidth="@dimen/dp_90"
+        android:text="name"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/item_single_value"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:layout_weight="1.0"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_5" />
+
+    <TextView
+        android:id="@+id/item_single_unitdata"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:text="unitdata"
+        android:textColor="@color/c6" />
+
+    <ImageView
+        android:id="@+id/item_single_saomiao"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/icon_saoma"
+        android:visibility="gone" />
+</LinearLayout>

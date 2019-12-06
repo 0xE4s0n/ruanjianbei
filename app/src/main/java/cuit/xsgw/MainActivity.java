@@ -1,5 +1,10 @@
 package cuit.xsgw;
 
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
+
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -8,12 +13,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.res.Resources;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
@@ -21,14 +20,19 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-import static androidx.fragment.app.FragmentStatePagerAdapter.BEHAVIOR_SET_USER_VISIBLE_HINT;
+import cuit.xsgw.fragment.GXYRecordFragment;
+import cuit.xsgw.fragment.TNBRecordFragment;
+
+import static androidx.fragment.app.FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ViewPager viewPager;
     private List<Fragment> fragments;
-    private FragmentAdapter adapter;
+    private MyFragmentPageAdapter adapter;
     private TabLayout tabs;
+    String[] mTabNames;
+    private int frontView = R.id.start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +42,13 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         mDrawerLayout = findViewById(R.id.main_drawer);
-        NavigationView navView = findViewById(R.id.nav_view);
+        final NavigationView navView = findViewById(R.id.nav_view);
         viewPager = findViewById(R.id.main_viewpager);
         fragments = new ArrayList<>();
-        fragments.add(new TNBfragment());
-        fragments.add(new GXYfragment());
-        String[] mTabNames = new String[]{getApplication().getResources().getString(R.string.tnb),getApplication().getResources().getString(R.string.gxy)};
-        adapter = new FragmentAdapter(getSupportFragmentManager(), BEHAVIOR_SET_USER_VISIBLE_HINT, fragments, mTabNames);
+        fragments.add(new TNBRecordFragment());
+        fragments.add(new GXYRecordFragment());
+        mTabNames = new String[]{getApplication().getResources().getString(R.string.tnb), getApplication().getResources().getString(R.string.gxy)};
+        adapter = new MyFragmentPageAdapter(getSupportFragmentManager(), BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT, fragments, mTabNames);
         viewPager.setAdapter(adapter);
         tabs = findViewById(R.id.tnb_table);
         tabs.setupWithViewPager(viewPager);
@@ -59,10 +63,20 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.start:
-                        SwitchWorkView(new TNBfragment());
+                        if (frontView != R.id.start) {
+                            fragments = new ArrayList<>();
+                            fragments.add(new TNBRecordFragment());
+                            fragments.add(new GXYRecordFragment());
+                            SwitchWorkView(fragments);
+                        }
                         break;
                     case R.id.list:
-                        SwitchWorkView(new GXYfragment());
+                        if (frontView != R.id.list) {
+                            //fragments = new ArrayList<>();
+                            //fragments.add(new TNBListFragment());
+                            //fragments.add(new GXYListFragment());
+                            SwitchWorkView(fragments);
+                        }
                         break;
                 }
                 mDrawerLayout.closeDrawers();
@@ -78,8 +92,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void SwitchWorkView(Fragment fragment) {
-        //TO-DO
+    private void SwitchWorkView(List<Fragment> fragments) {
+        adapter = new MyFragmentPageAdapter(getSupportFragmentManager(), BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT, fragments, mTabNames);
+        viewPager.setAdapter(adapter);
     }
 
     @Override

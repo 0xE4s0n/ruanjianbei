@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Engine_NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <!--透明背景-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>-->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <!-- toolbar的主题-->
+        <item name="toolbarStyle">@style/Engine_ActionBar_NoPadding</item>
+    </style>
+
+    <!--解决ActionBar的间距问题-->
+    <style name="Engine_ActionBar_NoPadding" parent="@style/Theme.AppCompat">
+        <item name="android:background">@android:color/transparent</item>
+        <!-- Support library compatibility -->
+        <item name="background">@android:color/transparent</item>
+        <!--解决左边一直有一块边距的问题 contentInsetStart = 0 -->
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <!---用于显示Dialog的主题-->
+    <style name="Engine_DialogStyle_FullScreen" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>//边框
+        <item name="android:windowIsFloating">true</item>//是否悬浮
+        <item name="android:windowIsTranslucent">true</item>//半透明
+        <item name="android:windowNoTitle">true</item>//没标题栏
+        <item name="android:background">@android:color/transparent</item>//背景透明
+        <item name="android:windowBackground">@android:color/transparent</item>//背景透明
+        <item name="android:backgroundDimEnabled">true</item>//模糊
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style mce_bogus="1" name="dialog_up_down_anim" parent="@style/Engine_DialogStyle_FullScreen">
+        <item name="android:windowEnterAnimation">@anim/push_up_in_no_alpha</item>
+        <item name="android:windowExitAnimation">@anim/push_down_out_no_alpha</item>
+    </style>
+
+    <style name="dialog_custom_title_text_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">23dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_property</item>
+    </style>
+
+    <style name="dialog_custom_content_text_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/text_color_property</item>
+    </style>
+
+</resources>

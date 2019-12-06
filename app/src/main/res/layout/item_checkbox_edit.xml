@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_form_white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_5">
+
+    <TextView
+        android:id="@+id/item_checkbox_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:text="name"
+        android:textColor="@color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_checkbox_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:padding="@dimen/dp_10"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:id="@+id/item_checkbox_other"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center_vertical"
+        android:hint="请输入..."
+        android:paddingLeft="@dimen/dp_5"
+        android:visibility="gone" />
+</LinearLayout>

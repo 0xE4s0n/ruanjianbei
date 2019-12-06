@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_50"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/sub_more_title"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="name"
+        android:textColor="@color/c6" />
+
+    <EditText
+        android:id="@+id/sub_more_value"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:layout_weight="1.0"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/sub_more_unitdata"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:text="unitdata"
+        android:textColor="@color/c6" />
+</LinearLayout>

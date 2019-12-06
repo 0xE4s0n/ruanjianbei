@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/linetop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dia_tab_biao_tou"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="0dp"
+        android:background="@color/color29"
+        android:gravity="center"
+        android:lineSpacingMultiplier="2"
+        android:text="表 头"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/line1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linetop" />
+
+    <TextView
+        android:id="@+id/dia_date"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:text="随访日期"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/dia_tab_biao_tou" />
+
+    <TextView
+        android:id="@+id/dia_date_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/white_round_stroke_bg"
+        android:drawableRight="@drawable/btn_right"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="right|center_vertical|center_horizontal|center"
+        android:paddingRight="@dimen/dp_10"
+        android:text="2019.09.18"
+        app:layout_constraintBottom_toBottomOf="@id/dia_date"
+        app:layout_constraintLeft_toRightOf="@id/dia_date"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dia_date" />
+
+    <TextView
+        android:id="@+id/dia_fangshi"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:text="随访方式"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_date"
+        app:layout_constraintTop_toBottomOf="@id/dia_date" />
+
+    <RadioGroup
+        android:id="@+id/dia_fangshi_group"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_15"
+        app:layout_constraintLeft_toLeftOf="@id/dia_date"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dia_fangshi">
+
+        <RadioButton
+            android:id="@+id/dia_fangshi_a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="门诊" />
+
+        <RadioButton
+            android:id="@+id/dia_fangshi_b"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="家庭" />
+
+        <RadioButton
+            android:id="@+id/dia_fangshi_c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="电话" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/dia_fangshi_group" />
+
+    <TextView
+        android:id="@+id/dia_tab_zheng_zhuang"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="0dp"
+        android:background="@color/color29"
+        android:gravity="center"
+        android:lineSpacingMultiplier="3"
+        android:text="症 状 体 征"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/line2"
+        app:layout_constraintTop_toBottomOf="@id/line1" />
+
+    <com.android.zxb.engine.view.WordWrapView
+        android:id="@+id/dia_zhengzhuang_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        app:layout_constraintLeft_toRightOf="@id/dia_tab_zheng_zhuang"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line1" />
+
+    <EditText
+        android:id="@+id/dia_zhengzhuang_other"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:layout_margin="@dimen/dp_15"
+        android:background="@drawable/white_round_stroke_bg"
+        android:hint="请输入"
+        android:paddingLeft="@dimen/dp_5"
+        android:singleLine="true"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/dia_tab_zheng_zhuang"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dia_zhengzhuang_group" />
+
+    <TextView
+        android:id="@+id/dia_tizheng_xueya"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:text="血压 (mmHg)"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/dia_tab_zheng_zhuang"
+        app:layout_constraintTop_toBottomOf="@id/dia_zhengzhuang_other" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_2"
+        app:layout_constraintBottom_toBottomOf="@id/dia_tizheng_xueya"
+        app:layout_constraintLeft_toRightOf="@id/dia_tizheng_xueya"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dia_tizheng_xueya">
+
+        <EditText
+            android:id="@+id/dia_tizheng_xueya_ssy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="收缩压"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="/" />
+
+        <EditText
+            android:id="@+id/dia_tizheng_xueya_szy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="舒张压"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dia_tizheng_shengao"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center"
+        android:text="身高 (cm)"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tizheng_xueya"
+        app:layout_constraintTop_toBottomOf="@id/dia_tizheng_xueya" />
+
+    <EditText
+        android:id="@+id/dia_tizheng_shengao_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/dia_tizheng_shengao"
+        app:layout_constraintLeft_toRightOf="@id/dia_tizheng_shengao"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dia_tizheng_shengao" />
+
+    <TextView
+        android:id="@+id/dia_tizheng_tizhong"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center"
+        android:text="体重 (kg)"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tizheng_shengao"
+        app:layout_constraintTop_toBottomOf="@id/dia_tizheng_shengao" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_2"
+        app:layout_constraintBottom_toBottomOf="@id/dia_tizheng_tizhong"
+        app:layout_constraintLeft_toRightOf="@id/dia_tizheng_tizhong"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dia_tizheng_tizhong">
+
+        <EditText
+            android:id="@+id/dia_tizheng_tizhong_now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="当前"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="/" />
+
+        <EditText
+            android:id="@+id/dia_tizheng_tizhong_expect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="下次目标"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dia_tizheng_tizhi"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:layout_below="@+id/dia_tizheng_tizhong"
+        android:gravity="center"
+        android:text="体质指数 (kg/m2)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tizheng_shengao"
+        app:layout_constraintTop_toBottomOf="@id/dia_tizheng_tizhong" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_2"
+        app:layout_constraintBottom_toBottomOf="@id/dia_tizheng_tizhi"
+        app:layout_constraintLeft_toRightOf="@id/dia_tizheng_tizhi"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dia_tizheng_tizhi">
+
+        <EditText
+            android:id="@+id/dia_tizheng_tizhi_now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="当前"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="/" />
+
+        <EditText
+            android:id="@+id/dia_tizheng_tizhi_expect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="下次目标"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dia_tizheng_zubei"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:text="足背动脉搏动"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tizheng_shengao"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dia_tizheng_tizhi" />
+
+    <RadioGroup
+        android:id="@+id/dia_tizhi_zubei_group"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_5"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tizheng_zubei"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dia_tizheng_zubei">
+
+        <RadioButton
+            android:id="@+id/dia_zubei_a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="触及正常" />
+
+        <RadioButton
+            android:id="@+id/dia_zubei_b"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="减弱" />
+
+        <RadioButton
+            android:id="@+id/dia_zubei_c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="消失" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/dia_tizheng_other"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:text="其他"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tizhi_zubei_group"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dia_tizhi_zubei_group" />
+
+    <EditText
+        android:id="@+id/dia_tizheng_other_value"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_70"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="start"
+        android:hint="请输入"
+        android:paddingLeft="@dimen/dp_5"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tizheng_other"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dia_tizheng_other" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/dia_tizheng_other_value" />
+
+    <TextView
+        android:id="@+id/dia_tab_suggest"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="0dp"
+        android:background="@color/color29"
+        android:gravity="center"
+        android:lineSpacingMultiplier="2"
+        android:text="生 活 方 式 指 导"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/line3"
+        app:layout_constraintTop_toBottomOf="@id/line2" />
+
+    <TextView
+        android:id="@+id/dia_suggest_smoke"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center"
+        android:text="日吸烟量(支)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tizheng_other"
+        app:layout_constraintTop_toBottomOf="@id/line2" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_2"
+        app:layout_constraintBottom_toBottomOf="@id/dia_suggest_smoke"
+        app:layout_constraintLeft_toRightOf="@id/dia_suggest_smoke"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line2">
+
+        <EditText
+            android:id="@+id/dia_suggest_smoke_now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="当前"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="/" />
+
+        <EditText
+            android:id="@+id/dia_suggest_smoke_expect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="下次目标"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dia_suggest_drink"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center"
+        android:text="日饮酒量(两)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="@id/dia_suggest_smoke"
+        app:layout_constraintTop_toBottomOf="@id/dia_suggest_smoke" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_2"
+        app:layout_constraintBottom_toBottomOf="@id/dia_suggest_drink"
+        app:layout_constraintLeft_toRightOf="@id/dia_suggest_drink"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dia_suggest_drink">
+
+        <EditText
+            android:id="@+id/dia_suggest_drink_now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="当前"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="/" />
+
+        <EditText
+            android:id="@+id/dia_suggest_drink_expect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="下次目标"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dia_suggest_yundong"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@+id/dia_suggest_drink"
+        android:gravity="center"
+        android:lineSpacingMultiplier="2"
+        android:text="运动"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_suggest_drink"
+        app:layout_constraintTop_toBottomOf="@id/dia_suggest_drink" />
+
+    <TextView
+        android:id="@+id/dia_suggest_yundong_now"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_30"
+        android:text="目前情况"
+        app:layout_constraintLeft_toLeftOf="@id/dia_suggest_yundong"
+        app:layout_constraintTop_toBottomOf="@id/dia_suggest_yundong" />
+
+    <EditText
+        android:id="@+id/dia_suggest_yd_now_cweek"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/dia_suggest_yundong_now"
+        app:layout_constraintLeft_toRightOf="@id/dia_suggest_yundong_now" />
+
+    <TextView
+        android:id="@+id/dia_suggest_yd_now_cweek_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_35"
+        android:gravity="center_vertical"
+        android:text=" 次/周"
+        app:layout_constraintBaseline_toBaselineOf="@id/dia_suggest_yd_now_cweek"
+        app:layout_constraintLeft_toRightOf="@id/dia_suggest_yd_now_cweek" />
+
+    <EditText
+        android:id="@+id/dia_suggest_yd_now_mtime"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/dia_suggest_yundong_now"
+        app:layout_constraintLeft_toRightOf="@id/dia_suggest_yd_now_cweek_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_35"
+        android:gravity="center_vertical"
+        android:text=" 分钟/次"
+        app:layout_constraintBaseline_toBaselineOf="@id/dia_suggest_yd_now_mtime"
+        app:layout_constraintLeft_toRightOf="@id/dia_suggest_yd_now_mtime" />
+
+    <TextView
+        android:id="@+id/dia_suggest_yundong_expect"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_30"
+        android:text="下次目标"
+        app:layout_constraintLeft_toLeftOf="@id/dia_suggest_yundong_now"
+        app:layout_constraintTop_toBottomOf="@id/dia_suggest_yundong_now" />
+
+    <EditText
+        android:id="@+id/dia_suggest_yd_expect_cweek"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/dia_suggest_yundong_expect"
+        app:layout_constraintLeft_toRightOf="@id/dia_suggest_yundong_expect" />
+
+    <TextView
+        android:id="@+id/dia_suggest_yd_expect_cweek_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_35"
+        android:gravity="center_vertical"
+        android:text=" 次/周"
+        app:layout_constraintBaseline_toBaselineOf="@id/dia_suggest_yd_expect_cweek"
+        app:layout_constraintLeft_toRightOf="@id/dia_suggest_yd_expect_cweek" />
+
+    <EditText
+        android:id="@+id/dia_suggest_yd_expect_mtime"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/dia_suggest_yundong_expect"
+        app:layout_constraintLeft_toRightOf="@id/dia_suggest_yd_expect_cweek_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_35"
+        android:gravity="center_vertical"
+        android:text=" 分钟/次"
+        app:layout_constraintBaseline_toBaselineOf="@id/dia_suggest_yd_expect_mtime"
+        app:layout_constraintLeft_toRightOf="@id/dia_suggest_yd_expect_mtime" />
+
+    <TextView
+        android:id="@+id/dia_suggest_food"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_30"
+        android:text="主食 (克/天)"
+        app:layout_constraintLeft_toLeftOf="@id/dia_suggest_yundong_expect"
+        app:layout_constraintTop_toBottomOf="@id/dia_suggest_yundong_expect" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_2"
+        app:layout_constraintBottom_toBottomOf="@id/dia_suggest_food"
+        app:layout_constraintLeft_toRightOf="@id/dia_suggest_food"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dia_suggest_food">
+
+        <EditText
+            android:id="@+id/dia_suggest_food_now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="当前"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="/" />
+
+        <EditText
+            android:id="@+id/dia_suggest_food_expect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_round_stroke_bg"
+            android:gravity="center"
+            android:hint="下次目标"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dia_mind"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center"
+        android:text="心理调整"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_suggest_food"
+        app:layout_constraintTop_toBottomOf="@id/dia_suggest_food" />
+
+    <RadioGroup
+        android:id="@+id/dia_mind_group"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_5"
+        app:layout_constraintLeft_toLeftOf="@id/dia_mind"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dia_mind">
+
+        <RadioButton
+            android:id="@+id/dia_mind_a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="良好" />
+
+        <RadioButton
+            android:id="@+id/dia_mind_b"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="一般" />
+
+        <RadioButton
+            android:id="@+id/dia_mind_c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="差" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/dia_compliance"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center"
+        android:text="遵医行为"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_mind_group"
+        app:layout_constraintTop_toBottomOf="@id/dia_mind_group" />
+
+    <RadioGroup
+        android:id="@+id/dia_compliance_group"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_5"
+        app:layout_constraintLeft_toLeftOf="@id/dia_compliance"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dia_compliance">
+
+        <RadioButton
+            android:id="@+id/dia_compliance_a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="良好" />
+
+        <RadioButton
+            android:id="@+id/dia_compliance_b"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="一般" />
+
+        <RadioButton
+            android:id="@+id/dia_compliance_c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="差" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/dia_compliance_group" />
+
+    <TextView
+        android:id="@+id/dia_tab_fuzhu"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="0dp"
+        android:background="@color/color29"
+        android:gravity="center"
+        android:lineSpacingMultiplier="2"
+        android:text="辅 助 检 查"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/line4"
+        app:layout_constraintTop_toBottomOf="@id/line3" />
+
+    <TextView
+        android:id="@+id/dia_fuzhu_kfxt"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center"
+        android:text="空腹血糖 (mmol/L)"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tizheng_xueya"
+        app:layout_constraintTop_toBottomOf="@id/line3" />
+
+    <EditText
+        android:id="@+id/dia_fuzhu_kfxt_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/dia_fuzhu_kfxt"
+        app:layout_constraintLeft_toRightOf="@id/dia_fuzhu_kfxt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dia_fuzhu_kfxt" />
+
+    <TextView
+        android:id="@+id/dia_fuzhu_thxhdb"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center"
+        android:text="糖化血红蛋白(%)"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tizheng_xueya"
+        app:layout_constraintTop_toBottomOf="@id/dia_fuzhu_kfxt" />
+
+    <EditText
+        android:id="@+id/dia_fuzhu_thxhdb_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/dia_fuzhu_thxhdb"
+        app:layout_constraintLeft_toRightOf="@id/dia_fuzhu_thxhdb"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dia_fuzhu_thxhdb" />
+
+    <TextView
+        android:id="@+id/dia_fuzhu_other"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:text="其他检查"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tizheng_xueya"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dia_fuzhu_thxhdb" />
+
+    <EditText
+        android:id="@+id/dia_fuzhu_other_value"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_70"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="start"
+        android:hint="请输入"
+        android:paddingLeft="@dimen/dp_5"
+        app:layout_constraintLeft_toLeftOf="@id/dia_fuzhu_other"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dia_fuzhu_other" />
+
+    <TextView
+        android:id="@+id/dia_fuzhu_other_date"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:text="检查日期"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/dia_date"
+        app:layout_constraintTop_toBottomOf="@id/dia_fuzhu_other_value" />
+
+    <TextView
+        android:id="@+id/dia_fuzhu_other_date_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/white_round_stroke_bg"
+        android:drawableRight="@drawable/btn_right"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="right|center_vertical|center_horizontal|center"
+        android:paddingRight="@dimen/dp_10"
+        android:text="2019.09.18"
+        app:layout_constraintBottom_toBottomOf="@id/dia_fuzhu_other_date"
+        app:layout_constraintLeft_toRightOf="@id/dia_fuzhu_other_date"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dia_fuzhu_other_date" />
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/dia_fuzhu_other_date" />
+
+    <View
+        android:id="@+id/line0"
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/dia_tab_biao_tou"
+        app:layout_constraintTop_toBottomOf="@id/linetop" />
+
+    <View
+        android:id="@+id/lineleft"
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/dia_tab_biao_tou"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

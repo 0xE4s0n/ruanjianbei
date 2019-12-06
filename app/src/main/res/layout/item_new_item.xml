@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    android:background="@drawable/white_round_stroke_bg"
+    android:padding="@dimen/dp_5">
+
+    <TextView
+        android:id="@+id/item_new_item_name"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:text="药物名称"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/item_new_item_delete"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/btn_del" />
+
+    <EditText
+        android:id="@+id/item_new_item_name_value"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/item_new_item_name"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center_vertical"
+        android:hint="请输入..."
+        android:paddingLeft="@dimen/dp_20" />
+
+    <TextView
+        android:id="@+id/item_new_item_method"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/item_new_item_name_value"
+        android:gravity="center_vertical"
+        android:text="用法用量"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/item_new_item_day"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/item_new_item_method"
+        android:gravity="center"
+        android:text="每日"
+        android:textColor="@color/c6" />
+
+    <TextView
+        android:id="@+id/item_new_item_rate_unit"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/item_new_item_method"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="次"
+        android:textColor="@color/c6" />
+
+    <EditText
+        android:id="@+id/item_new_item_rate"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/item_new_item_method"
+        android:layout_toLeftOf="@id/item_new_item_rate_unit"
+        android:layout_toRightOf="@id/item_new_item_day"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/item_new_item_once"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/item_new_item_day"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center"
+        android:text="每次"
+        android:textColor="@color/c6" />
+
+    <TextView
+        android:id="@+id/item_new_item_capacity_unit"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignTop="@id/item_new_item_once"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="mg"
+        android:textColor="@color/c6" />
+
+    <EditText
+        android:id="@+id/item_new_item_capacity"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignTop="@id/item_new_item_once"
+        android:layout_toLeftOf="@id/item_new_item_capacity_unit"
+        android:layout_toRightOf="@id/item_new_item_once"
+        android:background="@drawable/white_round_stroke_bg"
+        android:gravity="center" />
+</RelativeLayout>

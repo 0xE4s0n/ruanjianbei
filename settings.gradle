@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':wheelview', ':engine', ':pickerview', ':ocr_ui'
 rootProject.name='线上公卫'

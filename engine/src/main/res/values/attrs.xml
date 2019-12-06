@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义输入框的属性-->
+    <declare-styleable name="IconEditText">
+        <!--左边的图片-->
+        <attr name="leftImageSrc" format="reference" />
+        <!--右边的图片-->
+        <attr name="rightImageSrc" format="reference" />
+        <!--hint-->
+        <attr name="tHint" format="string" />
+        <!--hintColor-->
+        <attr name="tHintColor" format="reference" />
+        <!--int TYPE_CLASS_DATETIME = 4;
+            int TYPE_CLASS_NUMBER = 2;
+            int TYPE_CLASS_PHONE = 3;
+            int TYPE_CLASS_TEXT = 1;-->
+        <!--输入文本的种类-->
+        <attr name="inputType">
+            <enum name="TYPE_CLASS_DATETIME" value="4" />
+            <enum name="TYPE_CLASS_NUMBER" value="2" />
+            <enum name="TYPE_CLASS_PHONE" value="3" />
+            <enum name="TYPE_CLASS_TEXT" value="1" />
+            <enum name="TYPE_TEXT_VARIATION_PASSWORD" value="128" />
+        </attr>
+        <!--左图的左边距-->
+        <attr name="leftImageMarginLeft" format="dimension" />
+        <!--右图的左边距-->
+        <attr name="rightImageMarginRight" format="dimension" />
+        <!--编辑区的左边距-->
+        <attr name="editTextMarginLeft" format="dimension" />
+        <!--编辑区的右边距-->
+        <attr name="editTextMarginRight" format="dimension" />
+        <!--内容字体颜色-->
+        <attr name="textColor" format="reference" />
+        <!--内容字体大小-->
+        <attr name="textSize" format="dimension" />
+        <!--内容最大的长度-->
+        <attr name="maxLength" format="integer" />
+        <!--是否显示左边的图片-->
+        <attr name="showLeft" format="boolean" />
+        <!--是否显示右边图片-->
+        <attr name="showRight" format="boolean" />
+        <!--是否显示右边文字-->
+        <attr name="showRightTxt" format="boolean" />
+        <!--是否显示底部横线-->
+        <attr name="showBottom" format="boolean" />
+        <!--右边文字大小-->
+        <attr name="rightTxtSize" format="dimension" />
+        <!--右边文字颜色-->
+        <attr name="rightTxtColor" format="reference" />
+        <!--右边文字背景色-->
+        <attr name="rightTxtBackground" format="reference" />
+        <!--右边文字内容-->
+        <attr name="rightTxtContent" format="string" />
+        <!--是否支持emoji-->
+        <attr name="emojiallow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ShadeView">
+        <attr name="icon" format="reference" />
+        <attr name="color" format="color" />
+        <attr name="text" format="string" />
+        <attr name="text_size" format="dimension" />
+    </declare-styleable>
+
+</resources>

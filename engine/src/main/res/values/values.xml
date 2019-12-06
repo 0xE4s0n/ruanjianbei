@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--分割线-->
+    <style name="divide_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divide_line_height</item>
+        <item name="android:background">@color/app_line</item>
+    </style>
+
+    <!--标题栏样式-->
+    <style name="titleStyle">
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!--app文字:标题-->
+    <style name="app_text_title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/item_textColor_title</item>
+        <item name="android:textSize">@dimen/text_size_xxx</item>
+    </style>
+    <!--标题栏中的小图标包裹风格-->
+    <style name="titleIcContentStyle">
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/dp_4</item>
+    </style>
+    <!--app头像-->
+
+    <!--app文字:姓名-->
+    <!--app菜单-->
+    <style name="app_text_menu_style">
+        <item name="android:padding">@dimen/padding_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/padding_default</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/menu_textColor</item>
+        <item name="android:textColorHint">@color/item_textColor_content</item>
+    </style>
+
+    <style name="discover_portrait_ll_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/discover_bg</item>
+        <item name="android:padding">25dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="discover_landscape_ll_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/discover_bg</item>
+        <item name="android:padding">25dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="call_help_portrait_txt_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_s</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>
