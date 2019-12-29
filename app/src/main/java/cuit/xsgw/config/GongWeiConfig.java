@@ -1,12 +1,11 @@
 package cuit.xsgw.config;
 
-import com.android.zxb.engine.config.AppConfig;
 
 /**
  * 配置类
  */
 
-public interface GongWeiConfig extends AppConfig {
+public interface GongWeiConfig{
 
     String[] tizhiNames = {"平和质", "气虚质", "阳虚质", "气郁质", "阴虚质", "痰湿质", "湿热质", "血瘀质", "特禀质"};
     String[] suggestNames = {"情志调摄", "饮食调养", "起居调摄", "运动保健", "穴位保健", "其他"};
@@ -20,7 +19,7 @@ public interface GongWeiConfig extends AppConfig {
     /**
      * 事件通知总线TAG
      */
-    interface EventBusTag extends AppConfig.EventBusTag {
+    interface EventBusTag{
     }
 
     interface LocationConfig {

@@ -16,12 +16,13 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import cuit.xsgw.utils.date.DateStyle;
+import cuit.xsgw.utils.date.DateUtils;
+
 import com.android.zxb.engine.net.image.AppImageLoader;
 import com.android.zxb.engine.util.BigDecimalUtil;
 import com.android.zxb.engine.util.MoneyTextWatcher;
 import com.android.zxb.engine.util.ToastUtils;
-import com.android.zxb.engine.util.date.DateStyle;
-import com.android.zxb.engine.util.date.DateUtils;
 import com.android.zxb.engine.view.RadioPopupWindow;
 import com.baidu.ocr.sdk.model.IDCardResult;
 
@@ -54,7 +55,7 @@ import cuit.xsgw.bean.NewItemForm;
 import cuit.xsgw.bean.RadioForm;
 import cuit.xsgw.bean.RadioStringBean;
 import cuit.xsgw.bean.SingleEditForm;
-import cuit.xsgw.net.req.Medical;
+import cuit.xsgw.net.bean.Medical;
 import cuit.xsgw.pickerview.listener.OnTimeSelectListener;
 import cuit.xsgw.utils.ShowTimeUtil;
 import cuit.xsgw.views.ChooseAreaPopupWindow;
@@ -470,26 +471,6 @@ public class RecordFormAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             };
             holder.itemValue.addTextChangedListener(watcher);
             holder.itemValue.setTag(watcher);
-
-            holder.itemSaoMiao.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-//                    if (mClickLisitener != null) mClickLisitener.doSaoMiao(new onCallback() {
-//                        @Override
-//                        public void doSaoMiaoResult(IDCardResult result) {
-//                            holder.itemValue.setText(result.getIdNumber().toString());
-//
-//                            SingleEditForm nameForm = (SingleEditForm) mDatas.get(3);
-//                            nameForm.setCurValue(result.getName().toString());
-//                            notifyItemChanged(3);
-//
-//                            SingleEditForm areaForm = (SingleEditForm) mDatas.get(12);
-//                            areaForm.setCurValue(result.getAddress().toString());
-//                            notifyItemChanged(12);
-//                        }
-//                    });
-                }
-            });
         } else if (viewHolder instanceof SinglePortEditViewHolder) {
             SinglePortEditViewHolder holder = (SinglePortEditViewHolder) viewHolder;
             final SingleEditForm data = (SingleEditForm) mDatas.get(position);

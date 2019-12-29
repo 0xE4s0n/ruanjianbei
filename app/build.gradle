@@ -32,9 +32,8 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'de.hdodenhof:circleimageview:2.1.0'
-    implementation 'com.google.android.material:material:1.0.0'
+    api 'com.google.android.material:material:1.2.0-alpha03'
     implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
-    implementation project(path: ':engine')
     implementation project(path: ':wheelview')
     implementation 'com.squareup.retrofit2:retrofit:2.6.2'
     implementation 'io.reactivex:rxjava:1.2.9'
@@ -42,9 +41,9 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'org.greenrobot:greendao:3.2.2'
     implementation 'com.hwangjr.rxbus:rxbus:2.0.1'
-    implementation project(path: ':ocr_ui')
     implementation project(path: ':pickerview')
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-24'
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-24'
     implementation 'com.android.support:multidex:1.0.3'
+    implementation project(path: ':engine')
 }

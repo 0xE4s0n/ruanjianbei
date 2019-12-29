@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cuit.xsgw.R;
-import cuit.xsgw.net.res.AreaData;
+import cuit.xsgw.net.bean.AreaData;
 
 public class PopAreaAdapter extends RecyclerView.Adapter<PopAreaAdapter.ViewHolder> {
     private Context mContext;

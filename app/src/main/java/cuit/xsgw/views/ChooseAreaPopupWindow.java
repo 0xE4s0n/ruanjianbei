@@ -14,18 +14,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.zxb.engine.base.ui.view.BasePopupWindow;
-import com.android.zxb.engine.net.ApiConfig;
-import com.android.zxb.engine.net.entity.BaseResponse;
 import com.android.zxb.engine.net.manager.RxApiManager;
-import com.android.zxb.engine.util.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import cuit.xsgw.adapter.PopAreaAdapter;
-import cuit.xsgw.net.WorkApi;
-import cuit.xsgw.net.res.AreaData;
-import rx.functions.Action1;
+import cuit.xsgw.net.bean.AreaData;
 
 /**
  * 选择地区弹出框
@@ -177,19 +172,19 @@ public class ChooseAreaPopupWindow extends BasePopupWindow implements View.OnCli
     }
 
     private void requestAreas(String areaCode) {
-        handler.sendEmptyMessage(1);
-        RxApiManager.get().add("requestAreaList", WorkApi.get().requestAreaList(areaCode, new Action1<BaseResponse<List<AreaData>>>() {
-            @Override
-            public void call(BaseResponse<List<AreaData>> listBaseResponse) {
-                handler.sendEmptyMessage(2);
-                if (listBaseResponse.code == ApiConfig.ErrorCode.SUCCESS) {
-                    mData.add(listBaseResponse.data);
-                    handler.sendEmptyMessage(0);
-                } else {
-                    ToastUtils.showToast(mContext, "获取区域失败了");
-                }
-            }
-        }));
+//        handler.sendEmptyMessage(1);
+//        RxApiManager.get().add("requestAreaList", WorkApi.get().requestAreaList(areaCode, new Action1<BaseResponse<List<AreaData>>>() {
+//            @Override
+//            public void call(BaseResponse<List<AreaData>> listBaseResponse) {
+//                handler.sendEmptyMessage(2);
+//                if (listBaseResponse.code == ApiConfig.ErrorCode.SUCCESS) {
+//                    mData.add(listBaseResponse.data);
+//                    handler.sendEmptyMessage(0);
+//                } else {
+//                    ToastUtils.showToast(mContext, "获取区域失败了");
+//                }
+//            }
+//        }));
     }
 
     public void setOnSetValueListener(OnSetValueListener ck) {

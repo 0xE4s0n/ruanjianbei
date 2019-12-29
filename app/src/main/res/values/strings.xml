@@ -10,4 +10,11 @@
     <string name="passwd">密码</string>
     <string name="login">登录</string>
     <string name="regeist">注册</string>
+    <string name="submit">添加</string>
+    <string name="idcard">身份证号</string>
+    <string name="sex">性别</string>
+    <string name="id">用户名</string>
+    <string name="name">姓名</string>
+    <string name="address">住址</string>
+    <string name="diseas">疾病</string>
 </resources>

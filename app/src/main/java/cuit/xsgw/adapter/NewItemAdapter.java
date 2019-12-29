@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cuit.xsgw.R;
-import cuit.xsgw.net.req.Medical;
+import cuit.xsgw.net.bean.Medical;
 
 public class NewItemAdapter extends RecyclerView.Adapter<NewItemAdapter.ViewHolder> {
     private Context mContext;

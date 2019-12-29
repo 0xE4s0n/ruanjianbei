@@ -1,7 +1,5 @@
 package cuit.xsgw.utils;
 
-import com.android.zxb.engine.util.date.DateUtils;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -25,13 +23,14 @@ import cuit.xsgw.bean.NewItemForm;
 import cuit.xsgw.bean.RadioForm;
 import cuit.xsgw.bean.RadioStringBean;
 import cuit.xsgw.bean.SingleEditForm;
-import cuit.xsgw.net.req.BaseRecordQuest;
-import cuit.xsgw.net.req.DiabeteQuest;
-import cuit.xsgw.net.req.FollowRecordQuest;
-import cuit.xsgw.net.req.HighBloodQuest;
-import cuit.xsgw.net.req.Medical;
-import cuit.xsgw.net.req.MedicalUserQuest;
-import cuit.xsgw.net.req.Symptom;
+import cuit.xsgw.net.bean.BaseRecordQuest;
+import cuit.xsgw.net.bean.DiabeteQuest;
+import cuit.xsgw.net.bean.FollowRecordQuest;
+import cuit.xsgw.net.bean.HighBloodQuest;
+import cuit.xsgw.net.bean.Medical;
+import cuit.xsgw.net.bean.MedicalUserQuest;
+import cuit.xsgw.net.bean.Symptom;
+import cuit.xsgw.utils.date.DateUtils;
 
 public class FormUtil {
     //糖尿病随访表
